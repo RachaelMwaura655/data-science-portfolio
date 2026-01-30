@@ -38,17 +38,19 @@
       <!-- ===== NAVIGATION ===== -->
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
 
-          <!-- ADDED: Modules page link (create modules.html in the repo root) -->
+          <!-- Modules page -->
           <li class="nav__item"><a href="./modules.html" class="nav__link">Modules</a></li>
 
-          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-
-          <!-- CHANGED: "About" -> "About Me" -->
+          <!-- About -->
           <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
 
+          <!-- Skills -->
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+
+          <!-- Contact -->
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+
         </ul>
       </nav>
     </div>
@@ -60,7 +62,6 @@
           <span>Rachael Waithira Mwaura</span>
         </h1>
 
-        <!-- CHANGED: tagline text -->
         <p>
           Data Scientist – Turning Data into Insights
         </p>
@@ -73,59 +74,39 @@
   <main role="main">
 
     <!-- ======================================================
-         PROJECTS SECTION
+         ABOUT SECTION
          ====================================================== -->
 
-    <section class="work" id="work">
+    <section class="about" id="about">
       <div class="row">
-        <h2>Selected Projects</h2>
+        <h2>About Me</h2>
 
-        <div class="work__boxes">
+        <div class="about__content">
 
-          <!-- ===== PROJECT 1 ===== -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Data Analysis & Reporting</h3>
-              <p>
-                Analyzed datasets to uncover trends, generate insights, and support data-driven decision-making using Python and visualization tools.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Pandas</li>
-                <li>Matplotlib</li>
-                <li>Excel</li>
-              </ul>
-              <div class="work__links">
-                <a href="#" class="link__text">View Project <span>&rarr;</span></a>
-                <a href="#"><img src="./images/github.svg" class="work__code" alt="GitHub"></a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Data Analysis Project" />
-            </div>
+          <!-- TEXT -->
+          <div class="about__text">
+            <p>
+              I am a Data Scientist with a background in ICT and data analysis, currently pursuing an MSc in Data Science. I work with data to uncover trends, build clear reports, and deliver insights that support decision-making and operational efficiency.
+            </p>
+
+            <p>
+              I enjoy solving real-world problems using practical analytics and machine learning, and I focus on producing accurate, well-documented work that is easy for stakeholders to understand.
+            </p>
+
+            <!-- Resume button -->
+            <a href="./Rachael_Waithira_Mwaura_Resume.pdf"
+               class="btn"
+               target="_blank"
+               rel="noopener">
+              View Resume
+            </a>
           </div>
 
-          <!-- ===== PROJECT 2 ===== -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Machine Learning Model</h3>
-              <p>
-                Built and evaluated machine learning models to identify patterns and make predictions from structured datasets.
-              </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Scikit-learn</li>
-                <li>NumPy</li>
-                <li>Jupyter</li>
-              </ul>
-              <div class="work__links">
-                <a href="#" class="link__text">View Project <span>&rarr;</span></a>
-                <a href="#"><img src="./images/github.svg" class="work__code" alt="GitHub"></a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Machine Learning Project" />
-            </div>
+          <!-- IMAGE -->
+          <div class="about__photo-container">
+            <img class="about__photo"
+                 src="./images/rachael.png"
+                 alt="Rachael Waithira Mwaura" />
           </div>
 
         </div>
@@ -133,7 +114,7 @@
     </section>
 
     <!-- ======================================================
-         SKILLS SECTION
+         SKILLS SECTION (NOW AFTER ABOUT ME)
          ====================================================== -->
 
     <section class="skills" id="skills">
@@ -142,7 +123,7 @@
 
         <div class="skills__content">
 
-          <!-- ===== Technical Skills ===== -->
+          <!-- TECHNICAL -->
           <div class="skills__block">
             <h3>Technical</h3>
             <ul class="skills__list">
@@ -155,7 +136,7 @@
             </ul>
           </div>
 
-          <!-- ===== Tools ===== -->
+          <!-- TOOLS -->
           <div class="skills__block">
             <h3>Tools & Workflow</h3>
             <ul class="skills__list">
@@ -163,10 +144,11 @@
               <li>Git & GitHub</li>
               <li>Google Workspace / Microsoft Office</li>
               <li>Documentation & reporting</li>
+              <li>Remote collaboration tools</li>
             </ul>
           </div>
 
-          <!-- ===== Professional Strengths ===== -->
+          <!-- PROFESSIONAL -->
           <div class="skills__block">
             <h3>Professional Strengths</h3>
             <ul class="skills__list">
@@ -182,41 +164,6 @@
       </div>
     </section>
 
-    <!-- ======================================================
-         ABOUT SECTION
-         ====================================================== -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-
-        <div class="about__content">
-
-          <div class="about__text">
-            <p>
-              I am a Data Scientist with a background in ICT and data analysis, currently pursuing an MSc in Data Science. I work with data to uncover trends, build clear reports, and deliver insights that support decision-making and operational efficiency.
-            </p>
-
-            <p>
-              I enjoy solving real-world problems using practical analytics and machine learning, and I focus on producing accurate, well-documented work that is easy for stakeholders to understand.
-            </p>
-
-            <!-- UPDATED: Resume link now opens your PDF in a new tab -->
-            <!-- Make sure Rachael_Waithira_Mwaura_Resume.pdf is in the repo root (same level as index.html) -->
-            <a href="./Rachael_Waithira_Mwaura_Resume.pdf" class="btn" target="_blank" rel="noopener">
-              View Resume
-            </a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- UPDATED: Image now points to your file (rachael.png) -->
-            <!-- Make sure rachael.png is inside the /images folder -->
-            <img class="about__photo" src="./images/rachael.png" alt="Rachael Waithira Mwaura" />
-          </div>
-
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- ======================================================
@@ -228,9 +175,12 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          I am open to data science, data analysis, and analytics opportunities. If you would like to collaborate or learn more about my work, feel free to reach out.
+          I am open to data science, data analysis, and analytics opportunities.
+          If you would like to collaborate or learn more about my work, feel free to reach out.
         </p>
-        <a href="mailto:yourname@email.com" class="btn">yourname@email.com</a>
+        <a href="mailto:yourname@email.com" class="btn">
+          yourname@email.com
+        </a>
       </div>
     </div>
   </section>
@@ -259,9 +209,11 @@
     </div>
   </footer>
 
-  <!-- Back to top button -->
+  <!-- Back to top -->
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    <img src="./images/arrow-up.svg"
+         alt="Back to Top"
+         class="back-to-top__image" />
   </a>
 
   <!-- Main JS -->
