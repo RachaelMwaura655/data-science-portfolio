@@ -114,50 +114,66 @@
     </section>
 
     <!-- ======================================================
-         SKILLS SECTION (NOW AFTER ABOUT ME)
+         SKILLS SECTION (WITH IMAGE)
          ====================================================== -->
 
     <section class="skills" id="skills">
       <div class="row">
         <h2>Skills</h2>
 
-        <div class="skills__content">
+        <!-- UPDATED: Added a two-column layout (text + image) -->
+        <div class="skills__content skills__with-image">
 
-          <!-- TECHNICAL -->
-          <div class="skills__block">
-            <h3>Technical</h3>
-            <ul class="skills__list">
-              <li>Python (data analysis & scripting)</li>
-              <li>SQL (querying and reporting)</li>
-              <li>Excel / Google Sheets (dashboards & reporting)</li>
-              <li>Data visualization & storytelling</li>
-              <li>Data cleaning & preparation</li>
-              <li>Basic Machine Learning</li>
-            </ul>
+          <!-- ===== SKILLS TEXT ===== -->
+          <div class="skills__text">
+
+            <!-- TECHNICAL -->
+            <div class="skills__block">
+              <h3>Technical</h3>
+              <ul class="skills__list">
+                <li>Python (data analysis & scripting)</li>
+                <li>SQL (querying and reporting)</li>
+                <li>Excel / Google Sheets (dashboards & reporting)</li>
+                <li>Data visualization & storytelling</li>
+                <li>Data cleaning & preparation</li>
+                <li>Basic Machine Learning</li>
+              </ul>
+            </div>
+
+            <!-- TOOLS -->
+            <div class="skills__block">
+              <h3>Tools & Workflow</h3>
+              <ul class="skills__list">
+                <li>Jupyter Notebook</li>
+                <li>Git & GitHub</li>
+                <li>Google Workspace / Microsoft Office</li>
+                <li>Documentation & reporting</li>
+                <li>Remote collaboration tools</li>
+              </ul>
+            </div>
+
+            <!-- PROFESSIONAL -->
+            <div class="skills__block">
+              <h3>Professional Strengths</h3>
+              <ul class="skills__list">
+                <li>Analytical thinking</li>
+                <li>Attention to detail</li>
+                <li>Clear communication of insights</li>
+                <li>Time management & reliability</li>
+                <li>Problem-solving mindset</li>
+              </ul>
+            </div>
+
           </div>
 
-          <!-- TOOLS -->
-          <div class="skills__block">
-            <h3>Tools & Workflow</h3>
-            <ul class="skills__list">
-              <li>Jupyter Notebook</li>
-              <li>Git & GitHub</li>
-              <li>Google Workspace / Microsoft Office</li>
-              <li>Documentation & reporting</li>
-              <li>Remote collaboration tools</li>
-            </ul>
-          </div>
-
-          <!-- PROFESSIONAL -->
-          <div class="skills__block">
-            <h3>Professional Strengths</h3>
-            <ul class="skills__list">
-              <li>Analytical thinking</li>
-              <li>Attention to detail</li>
-              <li>Clear communication of insights</li>
-              <li>Time management & reliability</li>
-              <li>Problem-solving mindset</li>
-            </ul>
+          <!-- ===== SKILLS IMAGE ===== -->
+          <!-- UPDATED: Image path uses your folder name "image" (not "images") -->
+          <div class="skills__image-container">
+            <img
+              src="./image/skills.png"
+              alt="Data analysis and analytics illustration"
+              class="skills__image"
+            />
           </div>
 
         </div>
@@ -170,24 +186,24 @@
      CONTACT SECTION
      ====================================================== -->
 
-<section class="contact" id="contact">
-  <div class="row">
-    <h2>Get in Touch</h2>
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
 
-    <div class="contact__info">
-      <p>
-        I am open to data science, data analysis, and analytics opportunities.
-        If you would like to collaborate, discuss a project, or learn more about my work,
-        feel free to reach out via email.
-      </p>
+      <div class="contact__info">
+        <p>
+          I am open to data science, data analysis, and analytics opportunities.
+          If you would like to collaborate, discuss a project, or learn more about my work,
+          feel free to reach out via email.
+        </p>
 
-      <!-- WORKING EMAIL LINK -->
-      <a href="mailto:wrachelmwaura@gmail.com" class="btn">
-        wrachelmwaura@gmail.com
-      </a>
+        <!-- WORKING EMAIL LINK -->
+        <a href="mailto:wrachelmwaura@gmail.com" class="btn">
+          wrachelmwaura@gmail.com
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- ======================================================
        FOOTER
@@ -204,7 +220,7 @@
         </li>
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">
-            <img src="./images/linkedin.svg" class="footer__social-image" alt="LinkedIn">
+            <img src="./images/github.svg" class="footer__social-image" alt="LinkedIn">
           </a>
         </li>
       </ul>
