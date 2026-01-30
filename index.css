@@ -13,7 +13,8 @@
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/Jost-Regular.ttf') format('woff');
+    /* FIXED: Jost file is .ttf so format should be 'truetype' */
+    src: url('./fonts/Jost-Regular.ttf') format('truetype');
 }
 
 * {
@@ -39,10 +40,9 @@
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
-
     --container-max-width: 1180px;
     --container-normal-width: 800px;
-    --container-medium-width: 700px; 
+    --container-medium-width: 700px;
     --container-small-width: 500px;
 
     --gutter-huge: 12rem;
@@ -55,7 +55,7 @@
 }
 
 html {
-    font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+    font-size: 62.5%;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -178,7 +178,7 @@ p {
 }
 
 @media(max-width: 900px) {
-    p { 
+    p {
         max-width: var(--container-small-width);
     }
 }
@@ -219,7 +219,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid var(--pink);
     font-weight: 400;
 }
 
@@ -404,7 +404,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)),
         url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
@@ -472,7 +472,6 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__list {
-    /* list-style-type: square; */
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
 }
@@ -556,10 +555,48 @@ body:not(.user-is-tabbing) a:focus {
     .about__text {
         flex: 0 0 35%;
     }
-    
+
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
+    }
+}
+
+/* --------------------------------------- */
+/* ----- Skills (NEW: Image beside skills) ----- */
+/* --------------------------------------- */
+
+.skills__with-image {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.skills__text {
+    flex: 1;
+}
+
+.skills__image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.skills__image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+/* Responsive layout for skills image */
+@media (max-width: 768px) {
+    .skills__with-image {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills__image {
+        max-width: 80%;
     }
 }
 
@@ -609,5 +646,5 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
-    } 
+    }
 }
